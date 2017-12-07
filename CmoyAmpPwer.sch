@@ -1,0 +1,189 @@
+EESchema Schematic File Version 2
+LIBS:Cmoy Amp-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:opa2132pa-nd
+LIBS:Cmoy Amp-cache
+EELAYER 25 0
+EELAYER END
+$Descr User 8500 5500
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery BT1
+U 1 1 5A11364C
+P 2200 2125
+F 0 "BT1" H 2300 2225 50  0000 L CNN
+F 1 "Battery" H 2300 2125 50  0000 L CNN
+F 2 "" V 2200 2185 50  0001 C CNN
+F 3 "" V 2200 2185 50  0001 C CNN
+	1    2200 2125
+	1    0    0    -1  
+$EndComp
+$Comp
+L PTR902-2020K POT1
+U 3 1 5A1137D9
+P 2975 1675
+F 0 "POT1" H 2975 1375 60  0000 C CNN
+F 1 "PTR902-2020K" H 2975 1525 60  0000 C CIN
+F 2 "" H 2975 1675 60  0001 C CNN
+F 3 "" H 2975 1675 60  0001 C CNN
+	3    2975 1675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1675 2575 1675
+$Comp
+L R RLED1
+U 1 1 5A11381E
+P 3725 1925
+F 0 "RLED1" V 3805 1925 50  0000 C CNN
+F 1 "10k" V 3725 1925 50  0000 C CNN
+F 2 "" V 3655 1925 50  0001 C CNN
+F 3 "" H 3725 1925 50  0001 C CNN
+	1    3725 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED_ALT D1
+U 1 1 5A11385F
+P 3725 2400
+F 0 "D1" H 3725 2500 50  0000 C CNN
+F 1 "LED_ALT" H 3725 2300 50  0000 C CNN
+F 2 "" H 3725 2400 50  0001 C CNN
+F 3 "" H 3725 2400 50  0001 C CNN
+	1    3725 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3375 1675 5425 1675
+Wire Wire Line
+	3725 1675 3725 1775
+Wire Wire Line
+	3725 2075 3725 2250
+$Comp
+L R R7
+U 1 1 5A113939
+P 4400 1925
+F 0 "R7" V 4480 1925 50  0000 C CNN
+F 1 "4.7k" V 4400 1925 50  0000 C CNN
+F 2 "" V 4330 1925 50  0001 C CNN
+F 3 "" H 4400 1925 50  0001 C CNN
+	1    4400 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5A11397C
+P 4400 2400
+F 0 "R8" V 4480 2400 50  0000 C CNN
+F 1 "4.7k" V 4400 2400 50  0000 C CNN
+F 2 "" V 4330 2400 50  0001 C CNN
+F 3 "" H 4400 2400 50  0001 C CNN
+	1    4400 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C3
+U 1 1 5A1139B2
+P 5000 1925
+F 0 "C3" H 5025 2025 50  0000 L CNN
+F 1 "220uF" H 5025 1825 50  0000 L CNN
+F 2 "" H 5000 1925 50  0001 C CNN
+F 3 "" H 5000 1925 50  0001 C CNN
+	1    5000 1925
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C4
+U 1 1 5A1139F2
+P 5000 2400
+F 0 "C4" H 5025 2500 50  0000 L CNN
+F 1 "220uF" H 5025 2300 50  0000 L CNN
+F 2 "" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1675 4400 1775
+Connection ~ 3725 1675
+Wire Wire Line
+	5000 1675 5000 1775
+Connection ~ 4400 1675
+Wire Wire Line
+	4400 2250 4400 2075
+Wire Wire Line
+	5000 2675 5000 2550
+Wire Wire Line
+	2200 2675 5425 2675
+Wire Wire Line
+	4400 2675 4400 2550
+Wire Wire Line
+	3725 2550 3725 2675
+Connection ~ 4400 2675
+Wire Wire Line
+	2200 2675 2200 2325
+Connection ~ 3725 2675
+Wire Wire Line
+	2200 1925 2200 1675
+Connection ~ 4400 2175
+Connection ~ 5000 1675
+Connection ~ 5000 2675
+Wire Wire Line
+	4400 2175 5425 2175
+$Comp
+L GNDREF #VGND09
+U 1 1 5A11446C
+P 5425 2175
+F 0 "#VGND09" H 5425 1925 50  0001 C CNN
+F 1 "GNDREF" H 5425 2025 50  0000 C CNN
+F 2 "" H 5425 2175 50  0001 C CNN
+F 3 "" H 5425 2175 50  0001 C CNN
+	1    5425 2175
+	1    0    0    -1  
+$EndComp
+Text GLabel 5425 1675 2    60   Output ~ 0
+V+
+Text GLabel 5425 2675 2    60   Input ~ 0
+V-
+Wire Wire Line
+	5000 2075 5000 2250
+Connection ~ 5000 2175
+$EndSCHEMATC

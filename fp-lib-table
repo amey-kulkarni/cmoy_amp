@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name MyLib)(type KiCad)(uri "C:/Users/kulka/Documents/KiCad Projects/MyLib.pretty")(options "")(descr ""))
+)

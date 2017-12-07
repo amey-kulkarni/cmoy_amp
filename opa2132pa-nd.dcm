@@ -1,0 +1,17 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP OPA2132PA-ND
+D High Speed FET-Input Dual OpAmp
+$ENDCMP
+#
+$CMP PTR902-2020K
+D 9 mm Two-Ganged Pot w/ Rotary Switch
+K pot, potentiometer
+$ENDCMP
+#
+$CMP SJ1-3513
+D 3.5mm Audio Jack
+K Jack
+$ENDCMP
+#
+#End Doc Library
